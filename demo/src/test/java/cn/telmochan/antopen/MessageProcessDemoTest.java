@@ -40,6 +40,7 @@ public class MessageProcessDemoTest extends TestCase {
      */
     public void testApp() {
         //消息处理配置
+        String testStr = "testStr";
         AMSConfig amsConfig = new AMSConfig();
         amsConfig.setDefaultMessageHandler(new SimpleMessageHandler());
         amsConfig.setCheckLevel(TimeCheckLevel.TIME_CHECK_OFF);//关闭时间戳校验
